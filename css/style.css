@@ -1,0 +1,294 @@
+/*
+Colors used:
+Primary color (ivory): rgb(255, 255, 240)
+Secondary colors
+(salmon): rgb(250, 128, 114)
+(steelblue): rgb(70, 130, 180)
+(brown): rgb(165, 42, 42)
+(lightsalmon): rgb(255, 160, 122)
+
+*/
+header {
+  background-color: rgb(227, 209, 173);
+  padding: 5px;
+  text-align: center; /* Centers text */
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0px 7px 8px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  z-index: 99999;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color:ivory;
+font-family: 'Nunito', sans-serif;
+font-size: 16px; /* Sets the font size to 16px */
+font-weight: 400; /* Sets the font weight to 400 */
+line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+color: rgb(74,74,74);
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(74,74,74);
+    width: 100px;
+}
+nav > ul > li > a:visited { /* visited link */
+color: rgb(70, 130, 180);
+}
+nav > ul > li > a:hover {
+  color: rgb(250, 128, 114);
+  text-decoration: underline; /* underlining when hovering over a link */
+}
+nav > ul > li > a:active { /* selected link */
+color: rgb(165, 42, 42);
+}
+.logo {
+  max-width: 250px;
+
+}
+.container {
+padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right
+*/
+}
+/* all pages */
+main {
+    padding-top: 112px;
+}
+footer {
+    background-color: rgb(61, 90, 128, .9);
+    text-align: center;
+    color: rgb(254, 250, 224);
+    padding: 20px 0;
+}
+footer a {
+
+}
+/* end all pages */
+
+/* index page */
+#hero h1 {
+  text-align: center; /* Centers text */
+  color: rgb(254, 250, 224);
+}
+#hero p {
+  text-align: center; /* Centers text */
+  color: rgb(254, 250, 224);
+}
+#hero {
+  background-color: rgb(61, 90, 128, .9);
+  padding: 20px 0;
+ display: inline-block;
+ width: 100%;
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid rgb(74, 74, 74);
+}
+/* End index page */
+
+/* about page */
+
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 1.50em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.30em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.10em;
+  font-weight: 400;
+}
+h4 {
+  font-size: .90em;
+  font-weight: 400;
+}
+h5 {
+  font-size: .70em;
+  font-weight: bold;
+}
+img {
+  width: 100%;
+}
+
+/* ========================
+SOCIAL ICONS
+=========================*/
+svg {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  margin-top: 32px;
+}
+/* ============================
+LINK & BUTTONS
+=============================*/
+a {
+  color: rgb(70, 130, 180);
+    text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+color: rgb(70, 130, 180);
+}
+a:hover {
+  color: rgb(250, 128, 114);
+  text-decoration: underline; /* underlining when hovering over a link */
+}
+a:active { /* selected link */
+color: rgb(165, 42, 42);
+}
+.button {
+  display: inline-block;
+  background-color: transparent;
+  color: rgb(255, 160, 122);
+  font-weight: 400;
+  padding: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: 2px solid rgb(255, 160, 122);
+  transition: 0.2s;
+}
+.button:visited {
+  color: rgb(255, 160, 122);
+}
+.button:hover {
+  background-color: rgb(255, 160, 122);
+  color: rgb(255,255,255);
+  opacity: 0.8;
+  text-decoration: white;
+}
+.button:active {
+  background-color: rgb(255, 160, 122);
+  color: rgb(255,255,255);
+  opacity: 0.8;
+  text-decoration: white;
+}
+.button.contact {
+  color: rgb(70, 130, 180);
+  border: 2px solid rgb(70, 130, 180);
+  }
+  .button.contact:hover {
+    background-color: rgb(70, 130, 180);
+    color: rgb(255,255,255);
+  }
+
+  /* ============================
+  SLIDERS
+  =============================*/
+  /* Slideshow container */
+  .slideshow-container {
+    height: 300px;
+    width: 200px;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+  /* Hide the images by default */
+  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5  {
+    display: none;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -33px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: rgb(74,74,74);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* multi screen sliders */
