@@ -10,7 +10,7 @@ Secondary colors
 */
 header {
   background-color: rgb(227, 209, 173);
-  padding: 5px;
+  padding: 6px;
   text-align: center; /* Centers text */
   display: inline-block;
   width: 100%;
@@ -25,7 +25,7 @@ header {
 body {
   background-color:ivory;
 font-family: 'Nunito', sans-serif;
-font-size: 16px; /* Sets the font size to 16px */
+font-size: 18px; /* Sets the font size to 16px */
 font-weight: 400; /* Sets the font weight to 400 */
 line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 color: rgb(74,74,74);
@@ -75,27 +75,74 @@ footer {
     color: rgb(254, 250, 224);
     padding: 20px 0;
 }
-footer a {
-
+footer a {color: rgb(254, 250, 224);
+text-decoration: underline;
+}
+.social {
+  text decoration: none;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /* end all pages */
 
 /* index page */
-#hero h1 {
-  text-align: center; /* Centers text */
-  color: rgb(254, 250, 224);
-}
-#hero p {
-  text-align: center; /* Centers text */
-  color: rgb(254, 250, 224);
-}
 #hero {
   background-color: rgb(61, 90, 128, .9);
-  padding: 20px 0;
+  padding: 10px 0;
  display: inline-block;
  width: 100%;
+ text-align: center; /* Centers text */
+ color: rgb(254, 250, 224);
+}
+#hero span {
+  display: block;
 }
 #work .row { padding-bottom: 25px; border-bottom: 1px solid rgb(74, 74, 74);
+}
+#work h2 {
+  text-align: center;
+}
+#svgex {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+@keyframes color-change {
+  0% { fill: rgb(237, 198, 85);}
+  50% {fill: rgb(252, 255, 173);}
+  100% {fill: rgb(247, 100, 20);}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px, 50px)}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 /* End index page */
 
@@ -128,6 +175,10 @@ h5 {
 img {
   width: 100%;
 }
+#about-page h3 {
+  margin-top: 0;
+}
+
 
 /* ========================
 SOCIAL ICONS
@@ -165,7 +216,7 @@ color: rgb(165, 42, 42);
   border-radius: 8px;
   text-transform: uppercase;
   border: 2px solid rgb(255, 160, 122);
-  transition: 0.2s;
+  transition: 0.7s;
 }
 .button:visited {
   color: rgb(255, 160, 122);
@@ -183,8 +234,9 @@ color: rgb(165, 42, 42);
   text-decoration: white;
 }
 .button.contact {
-  color: rgb(70, 130, 180);
-  border: 2px solid rgb(70, 130, 180);
+  color: rgb(254, 250, 224);
+  border: 2px solid rgb(254, 250, 224);
+  text-decoration: none;
   }
   .button.contact:hover {
     background-color: rgb(70, 130, 180);
@@ -196,9 +248,7 @@ color: rgb(165, 42, 42);
   =============================*/
   /* Slideshow container */
   .slideshow-container {
-    height: 300px;
-    width: 200px;
-    max-width: 600px;
+    max-width: 90%;
     position: relative;
     margin: auto;
   }
@@ -292,3 +342,51 @@ color: rgb(165, 42, 42);
     to {opacity: 1}
   }
 /* multi screen sliders */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 3px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 50%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
