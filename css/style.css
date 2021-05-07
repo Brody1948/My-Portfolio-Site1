@@ -10,8 +10,9 @@ Secondary colors
 */
 header {
   background-color: rgb(227, 209, 173);
-  padding: 6px;
-  text-align: center; /* Centers text */
+  padding: 6px 0;
+  text-align: center;
+  /* Centers text */
   display: inline-block;
   width: 100%;
   box-shadow: 0px 7px 8px 0px rgba(50, 50, 50, 0.75);
@@ -22,99 +23,132 @@ header {
 * {
   box-sizing: border-box;
 }
+
 body {
-  background-color:ivory;
-font-family: 'Nunito', sans-serif;
-font-size: 18px; /* Sets the font size to 16px */
-font-weight: 400; /* Sets the font weight to 400 */
-line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: rgb(74,74,74);
+  background-color: rgb(251, 254, 251);
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 400 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: rgb(22, 26, 29);
 }
-nav > ul {
+
+main {
+  padding-top: 117px;
+}
+
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
 }
-nav > ul > li > a {
-  padding: 0 5px;
+
+nav>ul>li>a {
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(74,74,74);
-    width: 100px;
+  color: rgb(74, 74, 74);
 }
-nav > ul > li > a:visited { /* visited link */
-color: rgb(70, 130, 180);
+
+nav>ul>li>a:visited {
+  /* visited link */
+  color: rgb(74, 74, 74);
 }
-nav > ul > li > a:hover {
-  color: rgb(250, 128, 114);
-  text-decoration: underline; /* underlining when hovering over a link */
+
+nav>ul>li>a:hover {
+  color: rgb(165, 42, 42);
+  text-decoration: none;
+  /* underlining when hovering over a link */
 }
-nav > ul > li > a:active { /* selected link */
-color: rgb(165, 42, 42);
+
+nav>ul>li>a:active {
+  /* selected link */
+  color: rgb(165, 42, 42);
 }
+
 .logo {
   max-width: 250px;
+}
 
-}
 .container {
-padding: 0 15px;
+  padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right
 */
 }
+
 /* all pages */
-main {
-    padding-top: 112px;
-}
 footer {
-    background-color: rgb(61, 90, 128, .9);
-    text-align: center;
-    color: rgb(254, 250, 224);
-    padding: 20px 0;
+  background-color: rgb(189, 224, 254);
+  text-align: center;
+  color: rgb(22, 26, 29);
+  padding: 20px 0;
 }
-footer a {color: rgb(254, 250, 224);
-text-decoration: underline;
+
+footer a {
+  color: rgb(105, 96, 71);
+  text-decoration: underline;
 }
-.social {
-  text decoration: none;
-}
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-/* end all pages */
 
+/* end all pages */
 /* index page */
 #hero {
-  background-color: rgb(61, 90, 128, .9);
+  background-color: rgb(189, 224, 254);
   padding: 10px 0;
- display: inline-block;
- width: 100%;
- text-align: center; /* Centers text */
- color: rgb(254, 250, 224);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  /* Centers text */
+  color: rgb(22, 26, 29);
 }
+
 #hero span {
   display: block;
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid rgb(74, 74, 74);
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(74, 74, 74);
 }
+
 #work h2 {
   text-align: center;
 }
-#svgex {
-  width: 100%;
-max-width: 100%;
-height: auto;
+
+#work .row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
+
 @keyframes color-change {
-  0% { fill: rgb(237, 198, 85);}
-  50% {fill: rgb(252, 255, 173);}
-  100% {fill: rgb(247, 100, 20);}
+  0% {
+    fill: rgb(237, 198, 85);
+  }
+
+  50% {
+    fill: rgb(252, 255, 173);
+  }
+
+  100% {
+    fill: rgb(247, 100, 20);
+  }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -122,10 +156,17 @@ height: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px)}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px)
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -133,10 +174,17 @@ height: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation-duration: 34s;
   animation-name: cloud-move-reverse;
@@ -144,205 +192,248 @@ height: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 /* End index page */
-
 /* about page */
-
-
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 1.50em;
   font-weight: 700;
 }
+
 h2 {
   font-size: 1.30em;
   font-weight: 700;
 }
+
 h3 {
   font-size: 1.10em;
   font-weight: 400;
 }
+
 h4 {
   font-size: .90em;
   font-weight: 400;
 }
+
 h5 {
   font-size: .70em;
   font-weight: bold;
 }
+
 img {
   width: 100%;
 }
+
 #about-page h3 {
   margin-top: 0;
 }
 
-
 /* ========================
-SOCIAL ICONS
+Svg images
 =========================*/
-svg {
+.social svg {
   height: 30px;
   width: 30px;
   margin: 10px;
   margin-top: 32px;
 }
+
+.social a {
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+#svgex {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*  Saunter Page */
+#intro h1 {
+  text-align: center;
+}
+
+#intro h3 {
+  text-align: center;
+}
+
 /* ============================
 LINK & BUTTONS
 =============================*/
 a {
   color: rgb(70, 130, 180);
-    text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
-color: rgb(70, 130, 180);
+
+a:visited {
+  /* visited link */
+  color: rgb(70, 130, 180);
 }
+
 a:hover {
-  color: rgb(250, 128, 114);
-  text-decoration: underline; /* underlining when hovering over a link */
+  color: rgb(14, 28, 14);
+  text-decoration: underline;
+  /* underlining when hovering over a link */
 }
-a:active { /* selected link */
-color: rgb(165, 42, 42);
+
+a:active {
+  /* selected link */
+  color: rgb(165, 42, 42);
 }
+
 .button {
   display: inline-block;
   background-color: transparent;
   color: rgb(255, 160, 122);
   font-weight: 400;
   padding: 10px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   text-transform: uppercase;
   border: 2px solid rgb(255, 160, 122);
   transition: 0.7s;
 }
+
 .button:visited {
   color: rgb(255, 160, 122);
 }
+
 .button:hover {
   background-color: rgb(255, 160, 122);
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   opacity: 0.8;
   text-decoration: white;
 }
+
 .button:active {
   background-color: rgb(255, 160, 122);
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   opacity: 0.8;
   text-decoration: white;
 }
-.button.contact {
-  color: rgb(254, 250, 224);
-  border: 2px solid rgb(254, 250, 224);
-  text-decoration: none;
-  }
-  .button.contact:hover {
-    background-color: rgb(70, 130, 180);
-    color: rgb(255,255,255);
-  }
 
-  /* ============================
+.button.contact {
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgb(70, 130, 180);
+}
+
+.button.contact:hover {
+  background-color: rgb(1, 42, 74);
+  color: rgb(255, 255, 255);
+}
+
+/* ============================
   SLIDERS
   =============================*/
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 90%;
-    position: relative;
-    margin: auto;
-  }
-  /* Hide the images by default */
-  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5  {
-    display: none;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin: 0;
+  padding: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: rgb(74, 74, 74);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  padding: 8px 12px;
+  margin: 2px;
+  position: relative;
+}
+
+/* The dots/bullets/indicators */
+.slideshow-container img {
+  width: 60% !important;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
   }
 
-  img {
-    vertical-align: middle;
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
   }
 
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin: -33px;
-    padding: 16px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  to {
+    opacity: 1
   }
+}
 
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+#highfidm img {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
 
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
-  /* Caption text */
-  .text {
-    color: rgb(74,74,74);
-    font-size: 15px;
-    padding: 8px 12px;
-    position: relative;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: auto;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: 0.6s ease;
-  }
-
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
 /* multi screen sliders */
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -351,42 +442,169 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 3px;
   }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
   [class*="col-"] {
-  float: left;
-  padding: 10px;
+    float: left;
+    padding: 10px;
+  }
+
+  .border {
+    padding-left: 2em;
+  }
+
+  .border h2 {
+    margin: 0;
+  }
+
+  .journey img {
+    display: none;
+  }
+
+  .journey {
+    background-image: url('../img/Memobile.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .flexrow {
+    display: flex;
+  }
+
+  .section {
+    padding: 45px 0;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  .projectpage h1, .projectpage h2, .projectpage h3, .projectpage h4, .projectpage h5, .projectpage p, .projectpage ul {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 50%;
+  .col-lg-1 {
+    width: 8.33%;
   }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
   .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
     width: 50%;
   }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
+
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
+@media only screen and (min-width: 1920px) {}

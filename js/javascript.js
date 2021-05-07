@@ -20,5 +20,7 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";
 }
+alert("Hi! Welcome to My Portfolio Site")
+console.log("Hi! Welcome to My Portfolio Site");
 
 /* multi screen sliders */
