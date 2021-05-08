@@ -37,7 +37,7 @@ body {
 }
 
 main {
-  padding-top: 117px;
+  padding-top: 125px;
 }
 
 nav>ul {
@@ -74,6 +74,7 @@ nav>ul>li>a:active {
 
 .logo {
   max-width: 250px;
+  border-radius: 0 !important;
 }
 
 .container {
@@ -226,6 +227,7 @@ h5 {
 
 img {
   width: 100%;
+  border-radius: 19px;
 }
 
 #about-page h3 {
@@ -251,15 +253,6 @@ Svg images
   width: 100%;
   max-width: 100%;
   height: auto;
-}
-
-/*  Saunter Page */
-#intro h1 {
-  text-align: center;
-}
-
-#intro h3 {
-  text-align: center;
 }
 
 /* ============================
@@ -367,6 +360,10 @@ a:active {
   border-radius: 3px 0 0 3px;
 }
 
+.previous {
+  left:
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -390,6 +387,7 @@ a:active {
   padding: 8px 12px;
   margin: 2px;
   position: relative;
+  text-align: center;
 }
 
 /* The dots/bullets/indicators */
@@ -427,8 +425,84 @@ a:active {
   }
 }
 
-#highfidm img {
-  width: 60%;
+/*  Saunter Page */
+#intro h1 {
+  text-align: center;
+}
+
+#intro h3 {
+  text-align: center;
+  font-style: italic;
+}
+
+.problem {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.problem h2, {
+  margin-top: 0;
+  padding: 18px;
+}
+
+.competitor {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.competitor img {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.user {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.user img {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.persona {
+  margin-top: 0;
+}
+
+.persona img {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.sitemap {
+  margin-top: 0;
+}
+
+.sitemap img {
+  width: 100% !important;
+}
+
+.wire {
+  margin-top: 0;
+}
+
+.wire img {
+  width: 100% !important;
+}
+
+.mySlides4 {
+  padding-top: 50px;
+}
+
+#desktop img {
+  width: 100% !important;
+}
+
+#mobile img {
+  width: 80%;
   margin: 0 auto;
   display: block;
 }
@@ -502,6 +576,10 @@ Medium devices (640px and larger)
     padding: 10px;
   }
 
+  img {
+    
+  }
+
   .border {
     padding-left: 2em;
   }
@@ -533,13 +611,87 @@ Medium devices (640px and larger)
     padding-top: 100px;
   }
 
+  /* Start of Saunter Page */
   .projectpage h1, .projectpage h2, .projectpage h3, .projectpage h4, .projectpage h5, .projectpage p, .projectpage ul {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .problem {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .problem h2, {
+    margin-top: 0;
+    padding: 25px;
+  }
+
+  .competitor {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .competitor img {
+    width: 88%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  .user {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .user img {
+    width: 88%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  .persona {
+    margin-top: 0;
+  }
+
+  .persona img {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    width: 88%;
+  }
+
+  .sitemap {
+    margin-top: 0;
+  }
+
+  .sitemap img {
+    width: 80% !important;
+  }
+
+  .wire {
+    margin-top: 0;
+  }
+
+  .wire img {
+    width: 88% !important;
+  }
+
+  #desktop img {
+    width: 88% !important;
+  }
+
+  #mobile img {
+    width: 34% !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .mySlides4 {
+    padding-top: 50px;
+  }
 }
 
+/* End of Saunter Page */
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
