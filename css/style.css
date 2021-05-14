@@ -10,9 +10,7 @@ Secondary colors
 */
 header {
   background-color: rgb(227, 209, 173);
-  padding: 6px 0;
-  text-align: center;
-  /* Centers text */
+  padding: 10px 0 4px;
   display: inline-block;
   width: 100%;
   box-shadow: 0px 7px 8px 0px rgba(50, 50, 50, 0.75);
@@ -37,17 +35,46 @@ body {
 }
 
 main {
-  padding-top: 125px;
+  padding-top: 48px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
+nav>ul>li {}
 
 nav>ul>li>a {
   padding: 0 10px;
@@ -73,8 +100,8 @@ nav>ul>li>a:active {
 }
 
 .logo {
-  max-width: 250px;
-  border-radius: 0 !important;
+  max-width: 150px;
+  border-radius: 0;
 }
 
 .container {
@@ -440,7 +467,7 @@ a:active {
   padding-bottom: 25px;
 }
 
-.problem h2, {
+.problem h2 {
   margin-top: 0;
   padding: 18px;
 }
@@ -517,10 +544,31 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   nav {
     width: auto;
     float: right;
-    margin-top: 3px;
+    margin-top: 11px;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .logo {
+    max-width: 250px;
+    border-radius: 0;
   }
 
   .col-md-1 {
@@ -576,9 +624,7 @@ Medium devices (640px and larger)
     padding: 10px;
   }
 
-  img {
-    
-  }
+  img {}
 
   .border {
     padding-left: 2em;
@@ -623,7 +669,7 @@ Medium devices (640px and larger)
     padding-bottom: 25px;
   }
 
-  .problem h2, {
+  .problem h2 {
     margin-top: 0;
     padding: 25px;
   }
@@ -634,7 +680,7 @@ Medium devices (640px and larger)
   }
 
   .competitor img {
-    width: 88%;
+    width: 100%;
     padding-top: 25px;
     padding-bottom: 30px;
   }
@@ -645,7 +691,7 @@ Medium devices (640px and larger)
   }
 
   .user img {
-    width: 88%;
+    width: 100%;
     padding-top: 25px;
     padding-bottom: 30px;
   }
@@ -657,7 +703,7 @@ Medium devices (640px and larger)
   .persona img {
     padding-top: 25px;
     padding-bottom: 30px;
-    width: 88%;
+    width: 100%;
   }
 
   .sitemap {
@@ -665,7 +711,7 @@ Medium devices (640px and larger)
   }
 
   .sitemap img {
-    width: 80% !important;
+    width: 100% !important;
   }
 
   .wire {
@@ -673,11 +719,11 @@ Medium devices (640px and larger)
   }
 
   .wire img {
-    width: 88% !important;
+    width: 100% !important;
   }
 
   #desktop img {
-    width: 88% !important;
+    width: 100% !important;
   }
 
   #mobile img {
@@ -688,6 +734,15 @@ Medium devices (640px and larger)
 
   .mySlides4 {
     padding-top: 50px;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .previous {
+    left:
   }
 }
 
