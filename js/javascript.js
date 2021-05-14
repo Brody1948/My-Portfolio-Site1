@@ -7,7 +7,7 @@ function menuToggle() {
 }
 }
 
-
+/* end of jquery */
 
 var slideIndex = [1,1,2,3,4];
 /* Class the members of each slideshow group with different CSS classes */
