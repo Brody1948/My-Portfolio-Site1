@@ -9,7 +9,7 @@ Secondary colors
 
 */
 header {
-  background-color: rgb(227, 209, 173);
+  background-color: rgb(36, 36, 35);
   padding: 10px 0 4px;
   display: inline-block;
   width: 100%;
@@ -23,8 +23,8 @@ header {
 }
 
 body {
-  background-color: rgb(251, 254, 251);
-  font-family: 'Nunito', sans-serif;
+  background-color: rgb(250, 243, 221, .2);
+  font-family: 'Anton', sans-serif;
   font-size: 18px;
   /* Sets the font size to 16px */
   font-weight: 400;
@@ -61,7 +61,7 @@ main {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgba(232, 237, 223);
 }
 
 .navtoggle.responsive nav {
@@ -80,23 +80,23 @@ nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(74, 74, 74);
+  color: rgb(232, 237, 223);
 }
 
 nav>ul>li>a:visited {
   /* visited link */
-  color: rgb(74, 74, 74);
+  color: rgb(232, 237, 223);
 }
 
 nav>ul>li>a:hover {
-  color: rgb(165, 42, 42);
+  color: rgb(248, 249, 250);
   text-decoration: none;
   /* underlining when hovering over a link */
 }
 
 nav>ul>li>a:active {
   /* selected link */
-  color: rgb(165, 42, 42);
+  color: rgb(248, 249, 250);
 }
 
 .logo {
@@ -116,14 +116,14 @@ nav>ul>li>a:active {
 
 /* all pages */
 footer {
-  background-color: rgb(189, 224, 254);
+  background-color: rgb(222, 226, 230);
   text-align: center;
   color: rgb(22, 26, 29);
   padding: 20px 0;
 }
 
 footer a {
-  color: rgb(105, 96, 71);
+  color: rgb(167, 109, 96);
   text-decoration: underline;
 }
 
@@ -136,7 +136,7 @@ footer a {
 /* end all pages */
 /* index page */
 #hero {
-  background-color: rgb(189, 224, 254);
+  background-color: rgb(222, 226, 230);
   padding: 10px 0;
   display: inline-block;
   width: 100%;
@@ -270,6 +270,9 @@ Svg images
   margin: 10px;
   margin-top: 32px;
 }
+.social svg:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .social a {
   text-decoration: none;
@@ -298,7 +301,7 @@ a:visited {
 
 a:hover {
   color: rgb(14, 28, 14);
-  text-decoration: underline;
+  text-decoration: none;
   /* underlining when hovering over a link */
 }
 
@@ -309,30 +312,33 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: transparent;
-  color: rgb(255, 160, 122);
+  background-color: rgb(75, 163, 195);
   font-weight: 400;
   padding: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px;
+  border-radius: 20px;
   text-transform: uppercase;
-  border: 2px solid rgb(255, 160, 122);
+  border: 2px solid rgb();
   transition: 0.7s;
+}
+.button a {
+  text-decoration: white !important;
 }
 
 .button:visited {
-  color: rgb(255, 160, 122);
+  color: white;
+  background-color: rgb(75, 163, 195);
 }
 
 .button:hover {
-  background-color: rgb(255, 160, 122);
+  background-color: rgb(23, 86, 118);
   color: rgb(255, 255, 255);
   opacity: 0.8;
   text-decoration: white;
 }
 
 .button:active {
-  background-color: rgb(255, 160, 122);
+  background-color: rgb(75, 163, 195);
   color: rgb(255, 255, 255);
   opacity: 0.8;
   text-decoration: white;
@@ -340,13 +346,13 @@ a:active {
 
 .button.contact {
   color: rgb(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb();
   text-decoration: none;
-  background-color: rgb(70, 130, 180);
+  background-color: rgb(75, 163, 195);
 }
 
 .button.contact:hover {
-  background-color: rgb(1, 42, 74);
+  background-color: rgb(23, 86, 118);
   color: rgb(255, 255, 255);
 }
 
@@ -373,9 +379,9 @@ a:active {
   width: auto;
   margin: 0;
   padding: 15px;
-  color: rgb(0, 0, 0);
+  color: rgb(162, 73, 54);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 35px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -385,15 +391,17 @@ a:active {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+
 }
 
 .previous {
-  left:
+
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(178, 103, 94);
+  color: rgb(255,255, 255);
 }
 
 /* Caption text */
@@ -452,9 +460,22 @@ a:active {
   }
 }
 
+
 /*  Saunter Page */
+#intro {
+  background-color: rgb(202, 240, 248, .6);
+}
+#intro h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
 #intro h1 {
   text-align: center;
+}
+#intro h2 {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
 }
 
 #intro h3 {
@@ -559,11 +580,19 @@ Medium devices (640px and larger)
   }
 
   nav>ul {
-    margin: 1em 0;
+    margin: .2em 0;
+
   }
 
   nav>ul>li {
     display: inline-block;
+  }
+
+  nav>ul>li>a {
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(74, 74, 74);
   }
 
   .logo {
@@ -654,7 +683,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 100px;
+    padding-top: 83px;
   }
 
   /* Start of Saunter Page */
